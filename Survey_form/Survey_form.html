@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello, World!</title><!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Survey Form</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1 id="title">Student Survey Form</h1>
+
+<p id="description">Please fill out the following form:</p>
+
+<form id="survey-form">
+  
+  <label for="name" id="name-label">Name:</label>
+  <input type="text" id="name" name="name" placeholder="Enter your name" required>
+  
+  <label for="email" id="email-label">Email:</label>
+  <input type="email" id="email" name="email" placeholder="Enter your email" required>
+  
+  <label for="number" id="number-label">Age:</label>
+  <input type="number" id="number" name="age" placeholder="Enter your age" min="18" max="100" required>
+  
+  <label for="dropdown">Select your course:</label>
+  <select id="dropdown" name="course">
+    <option value="cse">CSE</option>
+    <option value="ece">ECE</option>
+    <option value="eee">EEE</option>
+    <option value="mech">MECH</option>
+    <option value="civi">CIVIL</option>
+    <option value="csm">CSM</option>
+    <option value="aim">Aim</option>
+    <option value="csd">CSD</option>
+    <option value="aid">AID</option>
+    <opton value="it">IT</opton>
+    <option value="cso">CSO</option>
+    <option value="cic">CIC</option>
+  </select>
+  
+  <label>YEAR:</label>
+  <label for="1">
+    <input type="radio" id="1" name="year" value="1"> 1
+  </label>
+  <label for="2">
+    <input type="radio" id="2" name="year" value="2"> 2
+  </label
+  <label for="3">
+    <input type="radio" id="3" name="year" value="3"> 3
+  </label>
+  <label for="4">
+    <input type="radio" id="4" name="year" value="4"> 4
+  </label>
+   <label>SEMESTER:</label>
+  <label for="1">
+    <input type="radio" id="1" name="sem" value="1"> 1
+  </label>
+  <label for="2">
+    <input type="radio" id="2" name="sem" value="2"> 2
+  </label>
+  
+  <label for="checkboxes">Languages you have idea about:</label>
+  <label for="python">
+    <input type="checkbox" id="python" name="coding" value="python"> Python
+  </label>
+  <label for="java">
+    <input type="checkbox" id="java" name="coding" value="java"> Java
+  </label>
+  <label for="c++">
+    <input type="checkbox" id="c++" name="coding" value="c++"> C++
+  </label>
+   <label for="front-end">
+    <input type="checkbox" id="front-end" name="coding" value="front-end"> Front-End
+  </label>
+   <label for="back-end">
+    <input type="checkbox" id="back-end" name="coding" value="c++"> Back-End
+  </label>
+   <label for="full-stack">
+    <input type="checkbox" id="full-stack" name="coding" value="full-stack"> Full-Stack
+  </label>
+  
+  <label for="comments">about yourself:</label>
+  <textarea id="comments" name="comments" placeholder="write about yourself"></textarea>
+  
+  <button type="submit" id="submit">Submit</button>
+  
+</form>
+
+</body>
+</html>
